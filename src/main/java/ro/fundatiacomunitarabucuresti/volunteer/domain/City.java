@@ -13,6 +13,5 @@ public class City {
     /**
      */
     @NotNull
-    @Size(min = 1, max = 50)
-    private String city;
+    private String name;
 }

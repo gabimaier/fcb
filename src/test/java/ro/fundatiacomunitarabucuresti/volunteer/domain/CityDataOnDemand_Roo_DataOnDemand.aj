@@ -24,16 +24,13 @@ privileged aspect CityDataOnDemand_Roo_DataOnDemand {
     
     public City CityDataOnDemand.getNewTransientCity(int index) {
         City obj = new City();
-        setCity(obj, index);
+        setName(obj, index);
         return obj;
     }
     
-    public void CityDataOnDemand.setCity(City obj, int index) {
-        String city = "city_" + index;
-        if (city.length() > 50) {
-            city = city.substring(0, 50);
-        }
-        obj.setCity(city);
+    public void CityDataOnDemand.setName(City obj, int index) {
+        String name = "name_" + index;
+        obj.setName(name);
     }
     
     public City CityDataOnDemand.getSpecificCity(int index) {

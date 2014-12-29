@@ -14,7 +14,7 @@ privileged aspect City_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager City.entityManager;
     
-    public static final List<String> City.fieldNames4OrderClauseFilter = java.util.Arrays.asList("city");
+    public static final List<String> City.fieldNames4OrderClauseFilter = java.util.Arrays.asList("name");
     
     public static final EntityManager City.entityManager() {
         EntityManager em = new City().entityManager;

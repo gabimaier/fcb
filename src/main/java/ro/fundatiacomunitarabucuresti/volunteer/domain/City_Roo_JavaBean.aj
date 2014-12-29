@@ -7,12 +7,12 @@ import ro.fundatiacomunitarabucuresti.volunteer.domain.City;
 
 privileged aspect City_Roo_JavaBean {
     
-    public String City.getCity() {
-        return this.city;
+    public String City.getName() {
+        return this.name;
     }
     
-    public void City.setCity(String city) {
-        this.city = city;
+    public void City.setName(String name) {
+        this.name = name;
     }
     
 }
